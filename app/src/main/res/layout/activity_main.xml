@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<android.support.design.widget.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+	</android.support.design.widget.AppBarLayout>
+	
+	<android.support.v4.widget.DrawerLayout
+		android:layout_height="match_parent"
+		android:layout_width="250dp">
+		
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content">
+			
+		</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:gravity="center">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="30dp"
+				android:gravity="center">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceLarge"
+						android:id="@+id/mainActivity_timeShow_textView"
+						android:text="0"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="s"/>
+
+				</LinearLayout>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="剩余"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/mainActivity_formula_textView"/>
+
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<EditText
+					android:layout_width="wrap_content"
+					android:ems="10"
+					android:digits="1234567890-"
+					android:layout_height="wrap_content"
+					android:hint="计算结果"
+					android:id="@+id/mainActivity_calculateResult_editText"/>
+
+			</android.support.design.widget.TextInputLayout>
+
+			<Button
+				android:layout_width="match_parent"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="提交"
+				android:onClick="sa"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+	
+	</android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
+
